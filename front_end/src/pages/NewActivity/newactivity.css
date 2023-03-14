@@ -1,0 +1,63 @@
+.formContainer5 {
+    background: url("https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"),
+        linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    background-size: cover;
+    background-position: center;
+    height: 160vh !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formWrapper5 {
+    background-color: white;
+    padding: 20px 60px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 800px;
+}
+
+.logo {
+    color: #5d5b8d;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.newActTitle {
+    color: #5d5b8d;
+    font-size: 40px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.title2 {
+    color: #011036;
+    font-size: 16px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input {
+    padding: 5px;
+    border: none;
+    width: 300px;
+    border-bottom: 1px solid #a7bcff;
+    font-size: 16px;
+    height: 20px;
+}
+
+::placeholder {
+    color: rgb(175, 175, 175);
+}
+
+.pic {
+    width: 225px;
+    height: 225px;
+}

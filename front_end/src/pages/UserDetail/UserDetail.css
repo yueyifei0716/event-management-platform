@@ -1,0 +1,31 @@
+span.logo {
+    color: #5d5b8d;
+    font-weight: bold;
+    font-size: 40px;
+    display: block;
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input {
+    padding: 15px;
+    border: none;
+    width: 250px;
+    border-bottom: 1px solid #a7bcff;
+}
+
+::placeholder {
+    color: rgb(175, 175, 175);
+}
+
+.btns {
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(175, 175, 175);
+}

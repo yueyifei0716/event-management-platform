@@ -1,0 +1,98 @@
+// import { cy } from "date-fns/locale"
+
+describe('empty spec', () => {
+    it('passes', () => {
+        cy.visit('http://localhost:3000/time_set')
+        cy.get('input[name="time"]').type('2017-06-01T08:30:01')
+        cy.contains(' Set Time ').click()
+  
+        cy.contains('Clear Data').click()
+  
+        cy.visit('http://localhost:3000/time_set')
+        cy.get('input[name="time"]').type('2017-06-01T08:30:01')
+        cy.contains(' Set Time ').click()
+  
+        cy.contains('Host Login').click()
+        cy.contains('Sign Up').click()
+        cy.get('[placeholder="Email"]').type('host4@163.com')
+        cy.get('[placeholder="Password"]').type('Ab123456!')
+        cy.get('[placeholder="Confirm Password"]').type('Ab123456!')
+        cy.get('.Register').click()
+  
+        cy.contains('New Activity').click()
+        cy.get('[placeholder="Activity Name"]').type('music activity')
+        
+        cy.get('.MuiSelect-select').click()
+        cy.contains('Music').click()
+        cy.get('[placeholder="Venue Name"]').type('road')
+        cy.get('[placeholder="Venue Address"]').type('road 1st')
+        cy.get('[placeholder="Description"]').type('good')
+        cy.get('[placeholder="Possible Seats"]').type('10')
+        cy.get('[placeholder="Row"]').type('10')
+        cy.get('[placeholder="Column"]').type('10')
+        cy.get('[placeholder="Ticket Money"]').type('10')
+        cy.get('[placeholder="All Tickets"]').type('10')
+        cy.get('[placeholder="Paste image link"]').type(' ')
+        cy.get('input[placeholder="Start Time"]').type('2017-06-06T08:30')
+        cy.get('input[placeholder="End Time"]').type('2017-06-07T08:30')
+        cy.contains('Submit').click()
+  
+        cy.contains('Your Activities').click()
+        cy.contains('Details').click()
+        cy.get('.comment-form-textarea').type('First cypress message')
+        cy.contains('Comment').click()
+        cy.contains('Edit').click()
+        cy.get('[name = "userEdit"]').type('Edit cypress message')
+        // cy.get('.comment-form-textareaUserEdit').type('Edit cypress message')
+        cy.contains('Submit').click()
+        cy.contains('Reply').click()
+        cy.get('[name = "userReply"]').type('I reply myself')
+        
+        cy.contains('Submit').click()
+        cy.contains('Delete').click()
+        cy.contains('Back').click()
+        cy.contains('Logout').click()
+
+        cy.contains('User Login').click()
+        cy.contains('Sign Up').click()
+        cy.get('[placeholder="Email"]').type('user@163.com')
+        cy.get('[placeholder="Password"]').type('Ab123456!')
+        cy.get('[placeholder="First Name"]').type('Sam')
+        cy.get('[placeholder="Last Name"]').type('Smith')
+        cy.get('[placeholder="Address"]').type('1 Lorn St')
+        cy.contains('WeChat').click()
+        cy.get('[placeholder="Account 3-40 characters"]').type('661133')
+        cy.get('.userSign').click()
+
+        cy.contains('Add Balance').click()
+        cy.get('button').filter(':contains("+ 50")').click()
+        cy.wait(100)
+        cy.get('button').filter(':contains("Submit")').click()
+        cy.wait(100)
+
+        cy.get('.featuredImg').last().click({force: true})
+        cy.get('[name = "seat_x"]').type('1')
+        cy.get('[name = "seat_y"]').type('1')
+        cy.contains('Buy Tickets').click()
+        // cy.get('[placeholder="Ticket Money"]').type('10')
+        // cy.get('[placeholder="All Tickets"]').type('10'
+        cy.contains('Ok').click()
+
+        // cy.get('MuiButton-label').filter(':contains("Ok")').click()
+        // cy.contains('Back').click()
+        cy.contains('Logout').click()
+
+        cy.contains(' Push Now Time ').click()
+        cy.get('[placeholder="week"]').type('1')
+        cy.get('[placeholder="day"]').type('1')
+        cy.get('[placeholder="hour"]').type('1')
+        cy.get('[placeholder="minute"]').type('1')
+        cy.get('[placeholder="second"]').type('1')
+        cy.contains(' Set Time ').click()
+        cy.contains('User Login').click()
+        cy.get('[placeholder="Email"]').type('user@163.com')
+        cy.get('[placeholder="Password"]').type('Ab123456!')
+        cy.get('.userLogin').click()
+        cy.contains('Your Activities').click()// Your Activities
+    })
+  })

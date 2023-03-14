@@ -1,0 +1,34 @@
+.navbar{
+    padding: 10px;
+    background-color: rgb(142, 142, 142);
+    display: flex;
+    justify-content: center;
+}
+
+.navContainer{
+    width: 100%;
+    max-width: 1024px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo{
+    font-weight: 500;
+    gap: 30px;
+    display: flex;
+}
+
+.navButton{
+    margin-left: 20px;
+    border: none;
+    padding: 7px 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 17px;
+    background: linear-gradient(210deg,#6e839c,rgb(54, 52, 57));
+    /* background-color: linear-gradient(200deg,#6e839c,rgb(147, 102, 192)); */
+}
+

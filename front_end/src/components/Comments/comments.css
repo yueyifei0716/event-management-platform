@@ -1,0 +1,29 @@
+.form{
+    display: block;
+    text-align: center;
+    margin: 35px auto 0;
+}
+.MyRating .css-iljtu2-MuiRating-root.Mui-disabled{
+    opacity: 1;
+}
+
+
+#mbtn{
+    background-color: red;
+    background: linear-gradient(to right,#03a9f4,#603385,#09a8f4);
+    /* background: linear-gradient(to right,#03a9f4,#f441a5,#ffeb3b,#09a8f4); */
+    /* Background gradient color size */
+    background-size: 400%;
+}
+
+#mbtn:hover{
+    /* Animation: Name time infinite is infinite playback */
+    animation: streamer 8s infinite;
+}
+
+@keyframes streamer{
+    100%{
+        /* background */
+        background-position: -400% 0;
+    }
+}

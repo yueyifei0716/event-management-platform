@@ -1,0 +1,55 @@
+#data-view {
+  width: 100%;
+  height: 100%;
+  background-color: #030409;
+  color: #fff;
+}
+#data-view #dv-full-screen-container {
+  background-image: url('./img/bg.png');
+  background-size: cover;
+  box-shadow: 0 0 3px blue;
+  display: flex;
+  flex-direction: column;
+}
+#data-view .main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+#data-view .block-left-right-content {
+  flex: 1;
+  display: flex;
+  margin-top: 20px;
+}
+#data-view .block-top-bottom-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-left: 20px;
+}
+#data-view .block-top-content {
+  height: 55%;
+  display: flex;
+  flex-grow: 0;
+  box-sizing: border-box;
+  padding-bottom: 20px;
+}
+#rose-chart {
+  width: 30%;
+  height: 100%;
+  background-color: rgba(6, 30, 93, 0.5);
+  border-top: 2px solid rgba(1, 153, 209, 0.5);
+  box-sizing: border-box;
+}
+#rose-chart .rose-chart-title {
+  height: 50px;
+  font-weight: bold;
+  text-indent: 20px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+#rose-chart .dv-charts-container {
+  height: calc(100% - 50px);
+}

@@ -1,0 +1,63 @@
+span.logo {
+    color: #5d5b8d;
+    font-weight: bold;
+    font-size: 40px;
+    display: block;
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input {
+    padding: 15px;
+    border: none;
+    width: 250px;
+    border-bottom: 1px solid #a7bcff;
+}
+
+::placeholder {
+    color: rgb(175, 175, 175);
+}
+
+button.setting {
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button.back {
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 105px;
+}
+
+#clmbtn{
+    background-color: red;
+    /* background: linear-gradient(to right,#03a9f4,#603385,#09a8f4); */
+    background: linear-gradient(to right,#03a9f4,#f441a5,#ffeb3b,#09a8f4);
+    /* Background gradient color size */
+    background-size: 400%;
+}
+
+#clmbtn:hover{
+    /* Animation: Name time infinite is infinite playback */
+    animation: streamer 8s infinite;
+}

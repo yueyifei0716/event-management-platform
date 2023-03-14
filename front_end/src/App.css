@@ -1,0 +1,61 @@
+/*.App {*/
+/*  text-align: center;*/
+/*}*/
+
+/*.App-logo {*/
+/*  height: 40vmin;*/
+/*  pointer-events: none;*/
+/*}*/
+
+/*@media (prefers-reduced-motion: no-preference) {*/
+/*  .App-logo {*/
+/*    animation: App-logo-spin infinite 20s linear;*/
+/*  }*/
+/*}*/
+
+/*.App-header {*/
+/*  background-color: #282c34;*/
+/*  min-height: 100vh;*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+/*  font-size: calc(10px + 2vmin);*/
+/*  color: white;*/
+/*}*/
+
+/*.App-link {*/
+/*  color: #61dafb;*/
+/*}*/
+
+/*@keyframes App-logo-spin {*/
+/*  from {*/
+/*    transform: rotate(0deg);*/
+/*  }*/
+/*  to {*/
+/*    transform: rotate(360deg);*/
+/*  }*/
+/*}*/
+/*@import '~antd/dist/antd.css';*/
+.container {
+  display: flex;
+  margin-top: 10px;
+}
+
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.others {
+  flex: 5;
+  /* background-color: rgb(211, 204, 233); */
+  /* background-color: #b7a1eb; */
+  background: linear-gradient(245deg, #b7a1eb, #ffffff);
+  /* background: linear-gradient(200deg, #b5aee4,#505285); */
+}
+
+.el-container {
+  display: none !important;
+}

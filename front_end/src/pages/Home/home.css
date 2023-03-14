@@ -1,0 +1,245 @@
+.homeContainer {
+    margin-top: 50px;
+    /* width: 100vw; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.homeTitle {
+    width: 1024px;
+    font-size: 20px;
+}
+
+.header1 {
+    /* background-color: rgb(147, 102, 192); */
+    background: linear-gradient(200deg, #e3c5eb, rgb(147, 102, 192));
+    color: white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.headerContainer {
+    width: 100%;
+
+    max-width: 1024px;
+    margin: 20px 0px 100px 0px;
+}
+
+.headerContainer.listMode {
+    margin: 20px 0px 0px 0px;
+}
+
+.headerList {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.headerListItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.headerListItem.active {
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.headerDesc {
+    margin: 20px 0px;
+}
+
+.headerBtn {
+    /* background-color: #e3c5eb; */
+    background: linear-gradient(-200deg, #f7bae3, #aac2ee);
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    margin-left: 10px;
+    padding: 5px 10px;
+}
+
+.topheaderBtn {
+    z-index: 999;
+    border: none;
+    margin-left: 20px;
+    padding: 10px 20px;
+    background: linear-gradient(125deg, #2c3e50, #fac0e7, #2980b9, #e74c3c, #8e44ad);
+    background-size: 500%;
+    animation: bgAnimation 15s linear infinite;
+
+}
+
+@keyframes bgAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.headerSearch1 {
+    height: 30px;
+    background-color: white;
+    border: 3px solid #bc9dc4;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 15px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -25px;
+    /* width: 100%; */
+    max-width: 1024px;
+}
+
+.headerIcon {
+    display: flex;
+    color: lightgray;
+}
+
+.headerSearchItem {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+}
+
+.headerSearchInput {
+    border: none;
+    display: flex;
+    outline: none;
+}
+
+.headerSearchText {
+    color: lightgray;
+    display: flex;
+    cursor: pointer;
+}
+
+.date {
+    position: absolute;
+    top: 50px;
+    z-index: 2;
+}
+
+.options {
+    z-index: 2;
+    position: absolute;
+    top: 50px;
+    background-color: white;
+    color: gray;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+.optionItem {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.optionCounter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    color: black;
+}
+
+.optionCounterButton {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #0071c2;
+    color: #0071c2;
+    cursor: pointer;
+    background-color: white;
+}
+
+.optionCounterButton:disabled {
+    cursor: not-allowed;
+}
+
+.featured {
+    width: 1024px !important;
+    max-width: auto;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    z-index: 1;
+    flex-wrap: wrap;
+}
+
+.featuredItem {
+    position: relative;
+    color: rgb(1, 1, 1);
+    border-radius: 10px;
+    overflow: hidden;
+    height: 250px;
+    width: 31%;
+    flex-wrap: wrap;
+    flex: none;
+}
+
+.featuredImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* filter: blur(1px);
+    -webkit-filter: blur(1px); */
+}
+
+.featuredTitles {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    -webkit-text-stroke: 1px black;
+    color: white;
+}
+
+/* 底部 */
+.foot {
+    padding: 80px 100px 30px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: flex-start;
+}
+
+.outList {
+    /* flex: 1; */
+    min-width: 200px;
+    width: 25%;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 18px !important;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.list-item {
+    font-size: 14px;
+    height: 28px;
+    line-height: 28px;
+    margin-top: 10px;
+}

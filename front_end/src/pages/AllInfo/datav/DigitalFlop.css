@@ -1,0 +1,40 @@
+#digital-flop {
+  position: relative;
+  height: 15%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(6, 30, 93, 0.5);
+}
+#digital-flop .dv-decoration-10 {
+  position: absolute;
+  width: 95%;
+  left: 2.5%;
+  height: 5px;
+  bottom: 0px;
+}
+#digital-flop .digital-flop-item {
+  width: 16.6%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-left: 3px solid #061e5d;
+  border-right: 3px solid #061e5d;
+}
+#digital-flop .digital-flop-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+#digital-flop .digital-flop {
+  display: flex;
+}
+#digital-flop .unit {
+  margin-left: 10px;
+  display: flex;
+  align-items: flex-end;
+  box-sizing: border-box;
+  padding-bottom: 13px;
+}
