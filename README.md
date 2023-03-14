@@ -1,6 +1,11 @@
 #### Welcome to COMP3900 Group UNeverSleepWell!
 
-*An amazing event management platform coming soon!*
+- Developed a web application using Flask and React, allowing hosts to register, login, and advertise events,
+and customers to view, book, and review events.
+- Utilized a MySQL database to store event and user data and implemented CRUD functionality for events,
+bookings, user authentication and authorization.
+- Implemented search and recommendation functionality using cosine similarity and word embeddings.
+- Tested the application across multiple devices and browsers to ensure a seamless user experience.
 
 # Setting VMware player station 16:
 
